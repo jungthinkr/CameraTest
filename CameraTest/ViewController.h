@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate>
 
 
+- (IBAction)Stepperaction:(UIStepper *)sender;
+
+@property (weak, nonatomic) IBOutlet UIStepper *stepperbutton;
+
+@property(nonatomic, retain) IBOutlet UIView *vImagePreview;
 @end
 
